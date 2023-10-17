@@ -1,0 +1,9 @@
+---
+
+const { gap } = Astro.props;
+---
+<button
+class=`flex flex-col items-center transition border border-[#37373a] p-4 pb-6 rounded-2xl backdrop-blur-sm shadow-xl gap-${gap ?? 4} bg-zinc-900/80 hover:bg-zinc-950/80`
+>
+  <slot />
+</button>
