@@ -1,0 +1,11 @@
+node_modules/
+dist/
+src/vite-env.d.ts
+.prettierrc.mjs
+.eslintrc
+env.d.ts
+vite.config.js
+astro.config.mjs
+tailwind.config.mjs
+package.json
+pnpm-lock.yaml
