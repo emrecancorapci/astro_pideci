@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import logoImage from "../assets/images/logo4.png";
+---
+
+<header class="flex w-full flex-col items-center justify-center gap-4">
+    <div class="bg-black/50 backdrop-blur-sm md:backdrop-blur-0 md:bg-white/0 w-full flex justify-center py-8">
+        <a href="/">
+            <Image class="max-w-xs" src={logoImage} alt="Ye-An Logo" />
+        </a>
+    </div>
+</header>

@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+import Button from "./Button.astro";
+
+import instagramIcon from "../assets/icons/instagram.svg";
+---
+<footer class="w-full flex justify-center pt-8">
+    <a href="https://instagram.com/yean_umitkoy">
+    <Button>
+        <Image
+        class="invert sepia saturate-0 hue-rotate-90 brightness-105 contrast-100"
+        src={instagramIcon}
+        height={64}
+            width={64}
+            alt="Instagram adresi"
+            />
+            <h3 class="text-base text-center text-white text-shadow">
+                Instagram Adresimiz
+            </h3>
+        </Button>
+    </a>
+</footer>
