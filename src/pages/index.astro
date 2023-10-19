@@ -1,14 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Footer from "../components/Footer.astro";
-import NavLink from "../components/NavLink.astro";
+import Layout from '../layouts/Layout.astro';
+import NavLink from '../components/ui/NavLink.astro';
 
-
-import konumImage from "../assets/images/konum.jpg";
-import menuImage from "../assets/images/menu.jpg";
+import menuImage from '../assets/images/menu.jpg';
 ---
 
 <Layout title="Ye-An Pide">
   <div class="grid" transition:animate="slide">
+    <NavLink className="p-4 gap-4" image={menuImage} title="Menü" href="/menu" alt="Menü bağlantısı" />
   </div>
 </Layout>
