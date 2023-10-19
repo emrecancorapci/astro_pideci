@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import Card from './Card.astro';
+import ProductSelector from './ProductSelector.jsx';
+
+interface Props {
+  name: string;
+  options: Array<string>;
+  image: ImageMetadata;
+  alt: string;
+}
+
+const { name, options, image, alt } = Astro.props;
+---
+
+<Card className="p-6 pt-4">
+  <h2 class="text-medium font-bold text-white">{name}</h2>
+  <Image class="transition rounded-2xl w-auto h-40 md:h-120 object-cover my-2 mb-6" src={image} alt={alt} />
+  <ProductSelector name={name} options={options} client:only />
+</Card>

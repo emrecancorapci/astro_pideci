@@ -3,16 +3,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 export default function ProductSelector({ name, options }) {
   return (
     <Select>
-      <SelectTrigger className="w-[300px] bg-zinc-900/80 text-white">
+      <SelectTrigger className="font-medium">
         <SelectValue placeholder={name} />
       </SelectTrigger>
-      <SelectContent className="bg-zinc-900/70 backdrop-blur">
+      <SelectContent className="max-h-[320px]">
         {options.map((option) => (
-          <SelectItem
-            className="bg-zinc-900/70 pl-2 text-white hover:bg-zinc-950/70 hover:text-white focus:bg-zinc-950/70 focus:text-white"
-            key={option}
-            value={option}
-          >
+          <SelectItem className="pl-2 font-medium" key={option} value={option}>
             {option}
           </SelectItem>
         ))}

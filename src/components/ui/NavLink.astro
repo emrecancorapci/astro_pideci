@@ -7,15 +7,18 @@ interface Props {
     image: ImageMetadata;
     href: string;
     alt: string;
+    target?: string;
+    rel?: string;
+    className?: string;
 }
 
-const { href, title, image, alt } = Astro.props;
+const { href, target, rel, title, image, alt, className } = Astro.props;
 ---
 
-<a href={href}>
-    <Button className="gap-2">
+<a target={target} rel={rel} href={href}>
+    <Button className={className}>
         <Image
-            class="transition rounded-2xl w-auto h-80 md:h-120"
+            class="rounded-2xl w-auto h-80 md:h-120 shadow-lg"
             src={image}
             alt={alt}
         />
