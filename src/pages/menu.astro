@@ -6,7 +6,7 @@ import { products } from '../assets/data/products.js';
 ---
 
 <Layout title="Menü - Ye-An Pide">
-  <div class="grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" transition:animate="slide">
+  <div class="grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-8" transition:animate="slide">
     {
       products.map((product) => (
         <Product name={product.name} options={product.options} image={product.image} alt={product.name} />
