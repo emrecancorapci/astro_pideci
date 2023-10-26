@@ -8,12 +8,21 @@ import tatliImg from '../images/tatli.jpg';
 import sogukImg from '../images/soguk_icecek.jpg';
 import sicakImg from '../images/sicak_icecek.jpg';
 import omletImg from '../images/omletler.jpg';
+import cipsImg from '../images/cips.jpg';
+import izgaraImg from '../images/izgara.jpg';
 
 export const products = [
   {
     name: 'Kahvaltılar',
     image: kahvaltiImg,
-    options: ['Hızlı Kahvaltı (Tek kişilik) 200 TL', 'Serpme Kahvaltı (2 kişilik) 500 TL'],
+    options: [
+      'Serpme Kahvaltı (2 kişilik) 500 TL',
+      'Hızlı Kahvaltı (Tek kişilik) 200 TL',
+      'Sucuk Tava 115 TL',
+      'Sahanda Yumurta 90 TL',
+      'Menemen 115 TL',
+      'Börek Sepeti (4 Sigara, 2 Muska) 70 TL',
+    ],
   },
   {
     name: 'Omletler',
@@ -23,7 +32,12 @@ export const products = [
   {
     name: 'Gözlemeler',
     image: gozlemeImg,
-    options: ['Peynirli 100 TL', 'Patatesli 115 TL', 'Kaşarlı 120 TL', 'Kıymalı 140 TL'],
+    options: ['Peynirli 115 TL', 'Patatesli 135 TL', 'Kaşarlı 125 TL', 'Kıymalı 160 TL'],
+  },
+  {
+    name: 'Izgara',
+    image: izgaraImg,
+    options: ['Izgara Köfte 180 TL'],
   },
   {
     name: 'Pide ve Izgaralar',
@@ -31,33 +45,33 @@ export const products = [
     options: [
       'Kıymalı 160 TL',
       'Kıymalı Üstü Kaşarlı 175 TL',
+      'Kuşbaşılı 175 TL',
+      'Kuşbaşılı Üstü Kaşarlı 190 TL',
+      'Karışık 170 TL',
+      'Karışık Üstü Kaşarlı 185 TL',
+      'Kapalı Kıymalı 175 TL ',
       'Kaşarlı 160 TL',
       'Develi Pernirlisi 160 TL',
-      'Karışık 170 TL',
-      'Kapalı Kıymalı 175 TL ',
-      'Karışık Üstü Kaşarlı 185 TL',
-      'Kuşbaşılı Üstü Kaşarlı 190 TL',
-      'Kuşbaşılı 175 TL',
-      'Tahinli (Sade) 160 TL',
-      'Cevizli 175 TL',
-      'Köfte 180 TL',
       'Sucuklu 190 TL',
+      'Cevizli 175 TL',
+      // 'Tahinli (Sade) 160 TL',
+      // 'Köfte 180 TL',
     ],
   },
   {
     name: 'Salatalar',
     image: salataImg,
-    options: ['Mevsim Salata 75TL', 'Çoban Salata 75 TL', 'Cips 75 TL'],
+    options: ['Mevsim Salata 75TL', 'Çoban Salata 75 TL'],
+  },
+  {
+    name: 'Cips',
+    image: cipsImg,
+    options: ['Cips 75 TL'],
   },
   {
     name: 'Tatlılar',
     image: tatliImg,
-    options: [
-      'Browni Pasta Dilim 120 TL',
-      'Cheesecake Dilim 130 TL',
-      'Çikolatalı Suffle 105 TL',
-      'Cevizli Pide 175 TL',
-    ],
+    options: ['Browni Pasta Dilim 120 TL', 'Cheesecake Dilim 130 TL', 'Sufle 105 TL'],
   },
   {
     name: 'Kahveler',
@@ -68,7 +82,7 @@ export const products = [
       'Espresso (Iced/Hot) 45 TL',
       'Americano (Iced/Hot) 60 TL',
       'Latte (Iced/Hot) 70 TL',
-      'Mocha (Iced/Hot) 80 TL',
+      // 'Mocha (Iced/Hot) 80 TL',
       'White Chocolate Mocha (Iced/Hot) 80 TL',
       'Caramel Macchiato (Iced/Hot) 80 TL',
     ],
@@ -77,13 +91,13 @@ export const products = [
     name: 'Sıcak İçecekler',
     image: sicakImg,
     options: [
-      'Çay (Bardak) 25 TL',
-      'Çay (Kupa) 35 TL',
+      'Çay (Bardak) 20 TL',
+      'Çay (Kupa) 30 TL',
       'Kış Çayı 60 TL',
       'Papatya Çayı 50 TL',
       'Ihlamur 55 TL',
       'Yeşil Çay 55 TL',
-      'Adaçayı 50 TL',
+      'Ada Çayı 50 TL',
       'Melisa Çayı 50 TL',
       'Sıcak Çikolata 65 TL',
       'Salep 65 TL',
@@ -91,7 +105,7 @@ export const products = [
     ],
   },
   {
-    name: 'Milkshakeler',
+    name: 'Milkshake',
     image: milkshakeImg,
     options: ['Muzlu 75 TL', 'Çilekli 75 TL', 'Çikolatalı 75 TL'],
   },
@@ -99,15 +113,17 @@ export const products = [
     name: 'Soğuk İçecekler',
     image: sogukImg,
     options: [
-      'Taze Sıkılmış Portakal Suyu 60 TL',
-      'Limonata 40 TL',
+      'Taze Portakal Suyu 75 TL',
+      'Limonata 50 TL',
       'Churchill 35 TL',
       'Ayran 25 TL',
       'Pepsi 35 TL',
       'Pepsi Max 35 TL',
       'Yedigün 35 TL',
+      'Ice Tea (Şeftali, Mango, Limon) 35 TL',
       'Gazoz 35 TL',
-      'Meyve Suyu 35 TL',
+      'Meyve Suyu (Vişne, Şeftali) 35 TL',
+      'Şalgam 30 TL',
       'Soda 20 TL',
       'Su 15 TL',
     ],
