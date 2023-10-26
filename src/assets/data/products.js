@@ -75,7 +75,7 @@ export const products = [
     name: 'Kahveler',
     image: kahveImg,
     options: [
-      'Türk Kahvesi 35 TL',
+      'Türk Kahvesi 40 TL',
       'Filtre Kahve (Iced/Hot) 60 TL',
       'Espresso (Iced/Hot) 45 TL',
       'Americano (Iced/Hot) 60 TL',
