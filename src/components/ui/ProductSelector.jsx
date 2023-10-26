@@ -1,10 +1,10 @@
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './select.jsx';
 
-export default function ProductSelector({ name, options }) {
+export default function ProductSelector({ options }) {
   return (
     <Select>
       <SelectTrigger className="font-medium">
-        <SelectValue placeholder={name} />
+        <SelectValue placeholder="Tıklayın" />
       </SelectTrigger>
       <SelectContent className="max-h-[320px]">
         {options.map((option) => (

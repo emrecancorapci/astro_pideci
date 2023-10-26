@@ -16,5 +16,5 @@ const { name, options, image, alt } = Astro.props;
 <Card className="p-6 pt-4">
   <h2 class="text-3xl ps-2 font-bold text-white">{name}</h2>
   <Image class="transition rounded-2xl w-80 h-60 md:h-120 object-cover my-4 mb-6" src={image} alt={alt} />
-  <ProductSelector name={name} options={options} client:only />
+  <ProductSelector options={options} client:only />
 </Card>
