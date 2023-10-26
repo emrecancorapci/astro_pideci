@@ -40,7 +40,7 @@ export const products = [
     options: ['Izgara Köfte 180 TL'],
   },
   {
-    name: 'Pide ve Izgaralar',
+    name: 'Pideler',
     image: pideImg,
     options: [
       'Kıymalı 160 TL',
@@ -51,11 +51,9 @@ export const products = [
       'Karışık Üstü Kaşarlı 185 TL',
       'Kapalı Kıymalı 175 TL ',
       'Kaşarlı 160 TL',
-      'Develi Pernirlisi 160 TL',
+      'Develi Peynirlisi 160 TL',
       'Sucuklu 190 TL',
       'Cevizli 175 TL',
-      // 'Tahinli (Sade) 160 TL',
-      // 'Köfte 180 TL',
     ],
   },
   {
@@ -82,7 +80,6 @@ export const products = [
       'Espresso (Iced/Hot) 45 TL',
       'Americano (Iced/Hot) 60 TL',
       'Latte (Iced/Hot) 70 TL',
-      // 'Mocha (Iced/Hot) 80 TL',
       'White Chocolate Mocha (Iced/Hot) 80 TL',
       'Caramel Macchiato (Iced/Hot) 80 TL',
     ],
